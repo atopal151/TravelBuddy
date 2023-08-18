@@ -1,6 +1,10 @@
+// ignore_for_file: file_names, library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 
+import '../FavoriteScreen/favoriteScreen.dart';
 import '../HomeScreen/homeScreen.dart';
+import '../SearchScreen/searchScreen.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
@@ -14,8 +18,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   final List<Widget> _pages = [
     const HomeScreen(),
-    const HomeScreen(),
-    const HomeScreen(),
+    const FavoriteScreen(),
+    const SearchScreen(),
   ];
 
   @override
@@ -32,7 +36,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         },
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: ""),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
         ],
         unselectedFontSize: 0, // Seçilmemiş ikonların etiketlerini gizler
