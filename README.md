@@ -1,4 +1,4 @@
-# travelbuddy
+# Travel Buddy
 
 
 
