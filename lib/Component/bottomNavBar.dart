@@ -35,9 +35,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
           });
         },
         items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Anasayfa"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favori"),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Ara"),
         ],
         unselectedFontSize: 0, // Seçilmemiş ikonların etiketlerini gizler
         iconSize: 25, // Seçilen ikonun boyutu
