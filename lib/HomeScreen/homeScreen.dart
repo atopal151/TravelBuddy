@@ -25,56 +25,56 @@ class _HomeScreenState extends State<HomeScreen> {
   List<TravelItem> travelItems = [
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 1",
       description: "Description 1",
       location: "Location 1",
     ),
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 2",
       description: "Description 2",
       location: "Location 2",
     ),
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 3",
       description: "Description 3",
       location: "Location 3",
     ),
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 4",
       description: "Description 4",
       location: "Location 4",
     ),
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 5",
       description: "Description 5",
       location: "Location 5",
     ),
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 6",
       description: "Description 6",
       location: "Location 6",
     ),
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 7",
       description: "Description 7",
       location: "Location 7",
     ),
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 8",
       description:
           "Description DescriptionDescriptionDescriptionDescriptionDescriptionDescription8",
@@ -82,14 +82,14 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 9",
       description: "Description 9",
       location: "Location 9",
     ),
     TravelItem(
       imageUrl:
-          "https://media.istockphoto.com/id/1392494719/tr/foto%C4%9Fraf/woman-with-pink-suitcase-and-passport-with-boarding-pass-standing-on-passengers-ladder-of.jpg?s=612x612&w=0&k=20&c=6SBMKjk1vXi5qbfaZSMOnX7XRC0x6UPcu_rwXShGXaY=",
+          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
       title: "Travel Buddy 10",
       description: "Description 10",
       location: "Location 10",
@@ -209,7 +209,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding:
+                const EdgeInsets.only(left: 16, right: 16, bottom: 10, top: 10),
             child: Center(
               child: Container(
                 decoration: BoxDecoration(
@@ -221,7 +222,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       BorderRadius.circular(30.0), // Çerçeve yuvarlaklığı
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(right: 15.0, left: 20.0),
+                  padding: const EdgeInsets.only(right: 16.0, left: 20.0),
                   child: DropdownButton<String>(
                     value: secilenSehir,
                     items: sehirler.map((String sehir) {
@@ -257,22 +258,32 @@ class _HomeScreenState extends State<HomeScreen> {
               itemBuilder: (context, index) {
                 final item = travelItems[index];
 
-                return Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Card(
-                    color: Colors.white,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                return InkWell(
+                  child: Padding(
+                    padding:
+                        const EdgeInsets.only(left: 16.0, right: 16.0, top: 16),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black26),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(20.0))),
                       child: Column(
                         children: [
                           ClipRRect(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: const BorderRadius.only(
+                                topLeft: Radius.circular(20),
+                                topRight: Radius.circular(20)),
                             child: SizedBox(
                               height: 250,
                               width: 400,
-                              child: Image.network(
-                                item.imageUrl,
-                                fit: BoxFit.cover,
+                              child: InkWell(
+                                onTap: () {
+                                  print("Detail Page");
+                                },
+                                child: Image.network(
+                                  item.imageUrl,
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ),
@@ -280,26 +291,31 @@ class _HomeScreenState extends State<HomeScreen> {
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              const Row(
+                              Row(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.all(10.0),
-                                    child: Icon(
-                                      Icons.favorite_outline,
-                                      size: 28,
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: InkWell(
+                                      onTap: () {
+                                        print("Favorite");
+                                      },
+                                      child: const Icon(
+                                        Icons.favorite_outline,
+                                        size: 28,
+                                      ),
                                     ),
                                   )
                                 ],
                               ),
-                             
                               Expanded(
                                 child: Padding(
                                   padding: const EdgeInsets.all(10.0),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
-                                     const  Text.rich(
+                                      const Text.rich(
                                         TextSpan(
                                           text: 'Travel ',
                                           children: <TextSpan>[
@@ -318,7 +334,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                         style: const TextStyle(
                                             fontSize: 12, color: Colors.grey),
                                       ),
-                                      
                                     ],
                                   ),
                                 ),
@@ -331,7 +346,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 padding: const EdgeInsets.all(10.0),
                                 child: Row(
                                   children: [
-                                    const Icon(Icons.location_on),
+                                    InkWell(
+                                        onTap: () {
+                                          print("Location");
+                                        },
+                                        child: const Icon(Icons.location_on)),
                                     Padding(
                                       padding: const EdgeInsets.only(left: 8.0),
                                       child: Text(
