@@ -181,8 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 color: Colors.black.withOpacity(0.5),
                                 spreadRadius: 2,
                                 blurRadius: 5,
-                                offset: const Offset(0,
-                                    3), // değiştirerek gölgenin yönünü ayarlayabilirsiniz
+                                offset: const Offset(0, 3),
                               ),
                             ],
                           ),
@@ -239,8 +238,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     hint: const Text('Bir şehir seçin'),
                     style: const TextStyle(
-                      fontSize: 16.0, // Metin boyutu
-                      color: Colors.black, // Metin rengi
+                      fontSize: 16.0,
+                      color: Colors.black,
                     ),
                     icon:
                         const Icon(Icons.arrow_drop_down), // Açılır ok simgesi
@@ -268,6 +267,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           borderRadius:
                               const BorderRadius.all(Radius.circular(20.0))),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           ClipRRect(
                             borderRadius: const BorderRadius.only(
@@ -290,6 +290,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(width: 10),
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Row(
                                 children: [
@@ -307,42 +308,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   )
                                 ],
                               ),
-                              Expanded(
-                                child: Padding(
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      const Text.rich(
-                                        TextSpan(
-                                          text: 'Travel ',
-                                          children: <TextSpan>[
-                                            TextSpan(
-                                              text: 'Buddy',
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Text(
-                                        item.description,
-                                        style: const TextStyle(
-                                            fontSize: 12, color: Colors.grey),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Padding(
+                               Padding(
                                 padding: const EdgeInsets.all(10.0),
                                 child: Row(
                                   children: [
@@ -360,9 +326,38 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ],
                                 ),
-                              ),
+                                                           ),
                             ],
                           ),
+                         
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text.rich(
+                                  TextSpan(
+                                    text: 'Travel ',
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: 'Buddy',
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Text(
+                                  item.description,
+                                  style: const TextStyle(
+                                      fontSize: 12, color: Colors.grey),
+                                ),
+                              ],
+                            ),
+                          ),
+                          
                         ],
                       ),
                     ),
