@@ -192,7 +192,23 @@ class _SearchScreenState extends State<SearchScreen> {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                             Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Row(
+                                children: [
+                                  const Icon(Icons.location_on),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 8.0),
+                                    child: Text(
+                                      item.location,
+                                      style: const TextStyle(fontSize: 9),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                             const Padding(
                               padding: EdgeInsets.all(10.0),
                               child: Row(
@@ -223,21 +239,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                     fontSize: 12, color: Colors.grey),
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Row(
-                                children: [
-                                  const Icon(Icons.location_on),
-                                  Padding(
-                                    padding: const EdgeInsets.only(left: 8.0),
-                                    child: Text(
-                                      item.location,
-                                      style: const TextStyle(fontSize: 9),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
+                           
                           ],
                         ),
                       ),
