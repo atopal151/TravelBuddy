@@ -17,42 +17,42 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
     List<TravelItem> travelItems = [
       TravelItem(
         imageUrl:
-            "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
-        title: "Travel Buddy 1",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
+     title: "Travel Buddy 1",
         description: "Description 1",
         location: "Location 1",
       ),
       TravelItem(
         imageUrl:
-            "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
-        title: "Travel Buddy 2",
+        "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
+       title: "Travel Buddy 2",
         description: "Description 2",
         location: "Location 2",
       ),
       TravelItem(
         imageUrl:
-            "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
-        title: "Travel Buddy 3",
+           "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
+       title: "Travel Buddy 3",
         description: "Description 3",
         location: "Location 3",
       ),
       TravelItem(
         imageUrl:
-            "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
-        title: "Travel Buddy 4",
+       "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
+         title: "Travel Buddy 4",
         description: "Description 4",
         location: "Location 4",
       ),
       TravelItem(
         imageUrl:
-            "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+        "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
         title: "Travel Buddy 5",
         description: "Description 5",
         location: "Location 5",
       ),
       TravelItem(
         imageUrl:
-            "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+        "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
         title: "Travel Buddy 6",
         description: "Description 6",
         location: "Location 6",

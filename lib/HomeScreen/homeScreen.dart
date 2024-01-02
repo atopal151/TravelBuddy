@@ -1,8 +1,13 @@
 // ignore_for_file: avoid_print, file_names
 
 import 'package:flutter/material.dart';
+import 'package:travelbuddy/DetailScreen/DetailPage.dart';
 
 import '../Component/TraverItem.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+
+import '../Component/postController.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -21,60 +26,77 @@ class _HomeScreenState extends State<HomeScreen> {
     "Manisa",
     "Uşak"
   ];
+   List<dynamic> parsedData=[];
+
+  void fetchData() async {
+    final response=await http.get(Uri.parse("https://jsonplaceholder.typicode.com/posts"));
+    if(response.statusCode==200){
+      print("response body${response.body}");
+       parsedData = jsonDecode(response.body);
+       for (var data in parsedData) {
+      print('Title: ${data['title']}');
+      print('Description: ${data['body']}');
+    }
+    }
+    else {
+      print("request failed status: ${response.statusCode}");
+    }
+  }
+  
 
   List<TravelItem> travelItems = [
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 1",
       description: "Description 1",
       location: "Location 1",
     ),
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 2",
       description: "Description 2",
       location: "Location 2",
     ),
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 3",
       description: "Description 3",
       location: "Location 3",
     ),
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 4",
       description: "Description 4",
       location: "Location 4",
     ),
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 5",
       description: "Description 5",
       location: "Location 5",
     ),
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 6",
       description: "Description 6",
       location: "Location 6",
     ),
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 7",
       description: "Description 7",
       location: "Location 7",
     ),
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 8",
       description:
           "Description DescriptionDescriptionDescriptionDescriptionDescriptionDescription8",
@@ -82,14 +104,14 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 9",
       description: "Description 9",
       location: "Location 9",
     ),
     TravelItem(
       imageUrl:
-          "https://ares.shiftdelete.net/2022/05/yaz-tatili-villa-kiralama.jpg",
+          "https://cdn2.enuygun.com/media/lib/375x300/uploads/image/tatil-valizinde-olmasi-gerekenler-32755.webp",
       title: "Travel Buddy 10",
       description: "Description 10",
       location: "Location 10",
@@ -126,6 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: IconButton(
                     icon: const Icon(Icons.add, color: Colors.white),
                     onPressed: () {
+                      fetchData();
                       // Eylem yapılacak işlevi buraya ekleyebilirsiniz
                     },
                     style: ElevatedButton.styleFrom(
@@ -278,7 +301,15 @@ class _HomeScreenState extends State<HomeScreen> {
                               width: 400,
                               child: InkWell(
                                 onTap: () {
-                                  print("Detail Page");
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => DetailPage(
+                                            message: item.description,
+                                            title: item.title,
+                                            locat: item.location,
+                                            image: item.imageUrl)),
+                                  );
                                 },
                                 child: Image.network(
                                   item.imageUrl,
@@ -308,7 +339,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   )
                                 ],
                               ),
-                               Padding(
+                              Padding(
                                 padding: const EdgeInsets.all(10.0),
                                 child: Row(
                                   children: [
@@ -326,10 +357,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ],
                                 ),
-                                                           ),
+                              ),
                             ],
                           ),
-                         
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Column(
@@ -357,7 +387,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               ],
                             ),
                           ),
-                          
                         ],
                       ),
                     ),
