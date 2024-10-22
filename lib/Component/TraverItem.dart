@@ -35,7 +35,7 @@ class _TravelListState extends State<TravelList> {
   }
 
   Future<void> fetchTravelItems() async {
-    final response = await http.get(Uri.parse(""));
+    final response = await http.get(Uri.parse("https://jsonplaceholder.typicode.com/posts"));
 
     final List<dynamic> data = json.decode(response.body);
     final List<TravelItem> items = data.map(
@@ -43,7 +43,7 @@ class _TravelListState extends State<TravelList> {
         return TravelItem(
             imageUrl: item['image_url'],
             title: item["title"],
-            description: item["description"],
+            description: item["body"],
             location: item["location"]);
       },
     ).toList();

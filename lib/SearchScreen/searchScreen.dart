@@ -2,6 +2,23 @@
 
 import 'package:flutter/material.dart';
 
+class SearchScreen extends StatefulWidget {
+  const SearchScreen({super.key});
+
+  @override
+  State<SearchScreen> createState() => _SearchScreenState();
+}
+
+class _SearchScreenState extends State<SearchScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold();
+  }
+}
+/*
+
+import 'package:flutter/material.dart';
+
 import '../Component/TraverItem.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -257,3 +274,4 @@ class _SearchScreenState extends State<SearchScreen> {
     );
   }
 }
+*/

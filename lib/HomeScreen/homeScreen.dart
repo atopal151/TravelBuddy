@@ -1,13 +1,10 @@
 // ignore_for_file: avoid_print, file_names
 
 import 'package:flutter/material.dart';
+import 'package:travelbuddy/Component/postController.dart';
 import 'package:travelbuddy/DetailScreen/DetailPage.dart';
 
 import '../Component/TraverItem.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
-
-import '../Component/postController.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,6 +14,15 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  PostController postController = PostController();
+
+  @override
+  void initState() {
+    super.initState();
+    postController.fetchData();
+    print(postController.posts.length.toString());
+  }
+
   final List<String> sehirler = [
     'İstanbul',
     'Ankara',
@@ -26,9 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
     "Manisa",
     "Uşak"
   ];
-   List<dynamic> parsedData=[];
+  List<dynamic> parsedData = [];
 
-  void fetchData() async {
+  /* void fetchData() async {
     final response=await http.get(Uri.parse("https://jsonplaceholder.typicode.com/posts"));
     if(response.statusCode==200){
       print("response body${response.body}");
@@ -41,8 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
     else {
       print("request failed status: ${response.statusCode}");
     }
-  }
-  
+  }*/
 
   List<TravelItem> travelItems = [
     TravelItem(
@@ -148,7 +153,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: IconButton(
                     icon: const Icon(Icons.add, color: Colors.white),
                     onPressed: () {
-                      fetchData();
+                      print(postController.posts.length.toString());
+                      // fetchData();
                       // Eylem yapılacak işlevi buraya ekleyebilirsiniz
                     },
                     style: ElevatedButton.styleFrom(
